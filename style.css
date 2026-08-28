@@ -1,0 +1,36 @@
+
+ body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+  
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    align-items: center;
+height: 60vh;
+width: 210px;
+padding: 17px;
+}
+.calculator-screen{
+    display: flex ;
+    width: 100%;
+    justify-content: center;
+    padding: 35px;
+    height: 11vh;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+ width: 80%;
+    justify-content: center;
+}
+  .buttons button{
+    padding: 1px;
+    font-weight: 200px;
+    font-size: larger;
+  }
