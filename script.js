@@ -1,35 +1,56 @@
-"use strict";
-const ps = require("prompt-sync");
-const prompt = ps();
-//sum
-let num1 = Number(prompt("Enter Num 1:"));
-let num2 = Number(prompt("Enter Num 2:"));
-function add(num1, num2) {
-  return num1 + num2;
-}
-let sum = add(num1, num2);
-console.log("sum:", sum);
+let screen = document.querySelector(".calculator-screen input");
+let btns = document.querySelectorAll(".buttons button");
 
-//subtraction
-function subtract(num1, num2) {
-  return num1 - num2;
-}
-let subtraction = subtract(num1, num2);
-console.log("subtrct:", subtraction);
+btns[0].onclick = function () {
+  screen.value = screen.value + "1";
+};
+btns[1].onclick = function () {
+  screen.value = screen.value + "2";
+};
+btns[2].onclick = function () {
+  screen.value = screen.value + "3";
+};
+btns[3].onclick = function () {
+  screen.value = screen.value + "/";
+};
+btns[4].onclick = function () {
+  screen.value = screen.value + "4";
+};
+btns[5].onclick = function () {
+  screen.value = screen.value + "5";
+};
+btns[6].onclick = function () {
+  screen.value = screen.value + "6";
+};
+btns[7].onclick = function () {
+  screen.value = screen.value + "+";
+};
+btns[8].onclick = function () {
+  screen.value = screen.value + "7";
+};
+btns[9].onclick = function () {
+  screen.value = screen.value + "8";
+};
+btns[10].onclick = function () {
+  screen.value = screen.value + "9";
+};
+btns[11].onclick = function () {
+  screen.value = screen.value + "-";
+};
+btns[12].onclick = function () {
+  screen.value = screen.value + "0";
+};
 
-//Multiplication
-function multiply(num1, num2) {
-  return num1 * num2;
-}
-let mulResult = multiply(num1, num2);
-console.log("multiply:", mulResult);
-
-//Division
-function divide(num1, num2) {
-  if (num2 === 0) {
-    return "Error";
+btns[13].onclick = function () {
+  try {
+    screen.value = eval(screen.value);
+  } catch (error) {
+    screen.value = "Error";
   }
-  return num1 / num2;
-}
-let division = divide(num1, num2);
-console.log("divide:", division);
+};
+btns[14].onclick = function () {
+  screen.value = screen.value + "*";
+};
+btns[15].onclick = function () {
+  screen.value = "";
+};
