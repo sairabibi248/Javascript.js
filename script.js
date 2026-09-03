@@ -5,7 +5,6 @@ btns.forEach(function (btn) {
   btn.addEventListener("click", function () {
     const value = btn.dataset.value;
     const action = btn.dataset.action;
-
     if (action === "clear") {
       screen.value = "";
     } else if (action === "calculate") {
