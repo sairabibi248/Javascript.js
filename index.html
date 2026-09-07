@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content=" Basic Calculator performing operator" />
+    <meta
+      name="description"
+      content=" scitific Calculator performing operator"
+    />
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -14,30 +17,45 @@
       </section>
 
       <section class="buttons">
+        <button data-action="ln">ln</button>
         <button data-value="(">(</button>
         <button data-value=")">)</button>
         <button data-value=".">.</button>
         <button data-value="+">+</button>
-        <button data-action="clear">C</button>
+        <button data-action="dc" class="dc-btn">DC</button>
+        <button data-action="clear" class="ac-btn">AC</button>
 
+        <button data-action="log">log</button>
+        <button data-action="√">√x</button>
+        <button data-action="sin" class="tri-btn">sin</button>
         <button data-value="3.14159">π</button>
         <button data-value="7">7</button>
         <button data-value="8">8</button>
         <button data-value="9">9</button>
         <button data-value="/">/</button>
 
+        <button data-action="∛">∛x</button>
+        <button data-value="**2">x<sup>2</sup></button>
+        <button data-action="cos" class="tri-btn">cos</button>
         <button data-value="2.71828">e</button>
         <button data-value="4">4</button>
         <button data-value="5">5</button>
         <button data-value="6">6</button>
         <button data-value="*">*</button>
 
-        <button data-value="2.71828**">e<sup>x</sup></button>
+        <button data-value="**2">x<sup>2</sup></button>
+        <button data-value="00">00</button>
+        <button data-action="tan" class="tri-btn">tan</button>
+        <button data-action="!">x!</button>
         <button data-value="1">1</button>
         <button data-value="2">2</button>
         <button data-value="3">3</button>
         <button data-value="-">-</button>
 
+        <button data-value="**3">x<sup>3</sup></button>
+        <button data-value="1/">1/x</button>
+        <button data-value="2.71828**">e<sup>x</sup></button>
+        <button data-value="%">%</button>
         <button data-value="**">x<sup>x</sup></button>
         <button data-value="0">0</button>
         <button data-action="calculate" class="equal-btn">=</button>
