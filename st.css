@@ -1,0 +1,118 @@
+/* Mobile Screen ke liye (Jab screen 768px ya kam ho) */
+@media (max-width: 768px) {
+  
+  /* 1. Dashboard ko aik ke neechay aik set karna */
+  .dashboard-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* 2. Sidebar ko ooper poori चौड़ाई (width) dena */
+  .sidebar {
+    width: 100%;
+    height: auto;
+  }
+
+  /* 3. Buttons ko aik line mein lana taaki side-by-side scroll ho sakein */
+  .sidebar-nav {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 10px;
+    gap: 8px;
+  }
+
+  /* 4. Buttons ka size mobile ke mutabiq chota karna */
+  .nav-btn {
+    width: auto;
+    padding: 6px 12px;
+    white-space: nowrap;
+  }
+.section-header h2 {
+    font-size: 24px; /* Aap isay 22px ya 20px bhi kar sakti hain agar mazeed chota chahiye ho */
+    margin-right: 0; /* Mobile par extra margin khatam karne ke liye */
+    margin-top: 15px;
+  }
+  .home-content {
+    padding-top: 30px; /* Upar ki zyadah space ko kam karne ke liye */
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .home-content h1 {
+    font-size: 22px; /* Heading ka size chota kar diya */
+  }
+
+  .home-content p {
+    font-size: 14px; /* Paragraph ka size chota kar diya */
+  }
+
+  .tag-container img {
+    width: 70px; /* Upar wale chotay icon ka size bhi adjust kar diya */
+  }
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 15px auto;
+    gap: 20px;
+  }
+
+  /* 2. Har card ka size chota karna aur unko width dena taaki screen par fit aayein */
+  .calc-card {
+    width: 85%; /* Screen ke hisab se width adjust ho jaye gi */
+    max-width: 300px; /* Card bohat zyada bara nahi hoga */
+    margin-top: 10px;
+    padding: 18px;
+  }
+
+  /* 3. Card ke andar ke text ka size bhi mobile ke liye fit karna */
+  .calc-card h3 {
+    font-size: 16px;
+  }
+
+  .calc-card p {
+    font-size: 13px;
+    padding-left: 0;
+  }
+  .calc-card h3 {
+    font-size: 15px; /* Isay mazeed chota aur pyara kar diya hai */
+    margin-bottom: 8px;
+  }
+
+  /* Card ke andar ke paragraph/text ka size */
+  .calc-card p {
+    font-size: 12px; /* Text ka size mobile ke liye perfect ho jaye ga */
+    margin-bottom: 15px;
+    padding-left: 0;
+  }
+
+  /* Open Module button ka size aur padding */
+  .action-btn {
+    padding: 6px 14px;
+    font-size: 12px;
+  }
+  @media (max-width: 768px) {
+  /* Module boxes aur containers ke liye */
+  .calculator-container, 
+  .module-box, 
+  .calc-app,
+  .sci-calculator, 
+  .converter-box {
+    width: 100%;
+    max-width: 320px;
+    margin: 10px auto;
+    box-sizing: border-box;
+  }
+
+  /* Grids aur buttons ko aik sath mobile friendly banane ke liye */
+  .calculator-grid, 
+  .keys-grid,
+  .converter-grid {
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+  }
+}
+}

@@ -12,7 +12,7 @@ function getFactorial(n) {
 }
 
 function displayFactorial() {
-  let num = Number(screen.value);
+  let num = Number(screen.value);  
   let factResult = getFactorial(num);
   screen.value = factResult;
 }

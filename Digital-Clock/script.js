@@ -34,4 +34,4 @@ function clock() {
   document.querySelector(".mins").textContent = mins;
   document.querySelector(".sec").textContent = sec;
 }
-setInterval(clock, 400);
+setInterval(clock, 1000);
