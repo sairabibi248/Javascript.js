@@ -263,7 +263,7 @@ function calculateBMI() {
 }
 
 bmiBtn.addEventListener("click", calculateBMI);
-//water intake//
+
 const waterWeightInput = document.querySelector(".water-weight-input");
 const waterScreen = document.querySelector(".water-screen-input");
 const waterBtn = document.querySelector(".water-btn");
@@ -287,7 +287,7 @@ function calculateWater() {
 }
 
 waterBtn.addEventListener("click", calculateWater);
-//velocity//
+
 const velocityDistInput = document.querySelector(".velocity-dist-input");
 const velocityTimeInput = document.querySelector(".velocity-time-input");
 const velocityScreen = document.querySelector(".velocity-screen-input");
@@ -315,7 +315,7 @@ function calculateVelocity() {
 
 velocityBtn.addEventListener("click", calculateVelocity);
 
-//acceleration logic//
+
 const accelViInput = document.querySelector(".accel-vi-input");
 const accelVfInput = document.querySelector(".accel-vf-input");
 const accelTimeInput = document.querySelector(".accel-time-input");
