@@ -222,7 +222,7 @@
 }
 
 .buttons button.ac-btn {
-  grid-column: span 2;
+  grid-column: span 1;
 }
 
 .buttons button.ac-btn:hover {
@@ -254,6 +254,14 @@
 
 .standard-buttons button.ac-btn:hover {
   background-color: #1f3629;
+}
+.buttons button.toggle-button {
+    background-color: #2b4d3f;
+    font-weight: bold;
+}
+
+.buttons button.toggle-button.rad-mode {
+    background-color: #5c3b2b;
 }
 
 /* ALL  Modules */
@@ -643,3 +651,5 @@
     width: 100px;
   }
 }
+
+

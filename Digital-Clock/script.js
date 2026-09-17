@@ -20,7 +20,7 @@ function clock() {
   let month = monthname[today.getMonth()];
   let year = today.getFullYear();
 
-  document.querySelector(".date p").textContent = `${day} ${month}${year}`;
+  document.querySelector(".date p").textContent = `${day} ${month} ${year}`;
 
   let hours = today.getHours();
   let mins = today.getMinutes();

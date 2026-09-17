@@ -98,6 +98,7 @@
               <button data-value="-">-</button>
               <button data-value="0">0</button>
               <button data-value=".">.</button>
+             
 
               <button data-action="calculate" class="equal-btn">=</button>
               <button data-value="*">*</button>
@@ -117,12 +118,13 @@
             </section>
 
             <section class="buttons">
+              <button data-action="toggle" class="toggle-button">DEG </button>
               <button data-action="ln">ln</button>
               <button data-value="(">(</button>
               <button data-value=")">)</button>
               <button data-value=".">.</button>
               <button data-value="+">+</button>
-              <button data-action="dc" class="dc-btn">DC</button>
+              <button data-action="dc" class="dc-btn">DEL</button>
               <button data-action="clear" class="ac-btn">AC</button>
 
               <button data-action="log">log</button>
@@ -339,6 +341,12 @@
           <div class="bmi-container">
             <div class="content">
               <div class="bmi-input-container">
+               
+            <select class="gender-input">
+               <option value="male">Male</option>
+               <option value="female">Female</option>
+            </select>
+            
                 <input
                   type="number"
                   class="weight-input"
@@ -731,6 +739,6 @@
         </div>
       </main>
     </div>
-    <script src="script.js"></script>
+   <script type="module" src="js/main.js"></script>
   </body>
 </html>
