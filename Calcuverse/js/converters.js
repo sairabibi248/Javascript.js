@@ -29,6 +29,7 @@ export function initConverters() {
   cToFBtn.addEventListener("click", celsiusToFahrenheit);
   fToCBtn.addEventListener("click", fahrenheitToCelsius);
 
+  /*Speed*/
   const speedInput = document.querySelector(".speed-input");
   const speedScreen = document.querySelector(".speed-screen input");
   const kmhToMphBtn = document.querySelector(".kmh-to-mph-btn");

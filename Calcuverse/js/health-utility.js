@@ -36,6 +36,7 @@ export function initHealthUtility() {
   }
 
   bmiBtn.addEventListener("click", calculateBMI);
+  /*Water Intake*/
 
   const waterWeightInput = document.querySelector(".water-weight-input");
   const waterScreen = document.querySelector(".water-screen-input");
