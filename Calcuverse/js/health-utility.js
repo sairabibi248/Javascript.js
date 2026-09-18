@@ -8,34 +8,49 @@ export function initHealthUtility() {
     let weight = weightInput.value;
     let height = heightInput.value;
 
+    const genderInput = document.querySelector('input[name="gender"]:checked');
+
     if (weight === "" || height === "") {
       bmiScreen.value = "Enter value";
-    } else {
-      let w = Number(weight);
-      let h = Number(height);
+      return;
+    }
 
-      if (h <= 0) {
-        bmiScreen.value = "Invalid height";
+    if (!genderInput) {
+      bmiScreen.value = "Select gender";
+      return;
+    }
+
+    let w = Number(weight);
+    let h = Number(height);
+    let gender = genderInput.value;
+
+    if (h <= 0 || w <= 0) {
+      bmiScreen.value = "Invalid input";
+      return;
+    }
+
+    let bmi = w / (h * h);
+    let category = "";
+
+if (gender === "male" || gender === "female") {
+      if (bmi < 18.5) {
+        category = "Underweight";
+      } else if (bmi >= 18.5 && bmi <= 24.9) {
+        category = "Healthy Weight";
+      } else if (bmi >= 25.0 && bmi <= 29.9) {
+        category = "Overweight";
+      } else if (bmi >= 30.0 && bmi <= 34.9) {
+        category = "Obesity (Class 1)";
       } else {
-        let bmi = w / (h * h);
-        let category = "";
-
-        if (bmi < 18.5) {
-          category = "Underweight";
-        } else if (bmi >= 18.5 && bmi <= 24.9) {
-          category = "Normal";
-        } else if (bmi >= 25 && bmi <= 29.9) {
-          category = "Overweight";
-        } else {
-          category = "Obese";
-        }
-
-        bmiScreen.value = bmi.toFixed(1) + " (" + category + ")";
+        category = "Obesity (Class 2 High)";
       }
     }
+
+    bmiScreen.value = `${bmi.toFixed(1)} (${category})`;
   }
 
   bmiBtn.addEventListener("click", calculateBMI);
+
   /*Water Intake*/
 
   const waterWeightInput = document.querySelector(".water-weight-input");

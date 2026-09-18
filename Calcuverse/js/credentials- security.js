@@ -30,7 +30,6 @@ export function initCredentials() {
   const encoderInput = document.querySelector(".encoder-input");
   const encoderScreen = document.querySelector(".encoder-screen-input");
   const encodeBtn = document.querySelector(".encode-btn");
-  /*E26 Encode*/
 
   function encodeText() {
     let text = encoderInput.value;

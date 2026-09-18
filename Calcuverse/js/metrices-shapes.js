@@ -20,7 +20,6 @@ export function initMetricesShapes() {
       }
     }
   }
-  /*Circle Area*/
 
   circleBtn.addEventListener("click", calculateCircleArea);
   const triangleBaseInput = document.querySelector(".triangle-base-input");

@@ -96,7 +96,6 @@
   display: block;
 }
 
-/*Standard & Scientific Section */
 .section-header h2 {
   font-size: 40px;
   font-weight: 600;
@@ -146,8 +145,8 @@
   color: #ffffff;
   border: none;
   border-radius: 6px;
-  padding: 8px 16px;
-  font-size: 13px;
+  padding: 10px 20px;
+  font-size: 14px;
   font-weight: 500;
   font-family: sans-serif;
 }
@@ -155,7 +154,6 @@
   background-color: #306346;
 }
 
-/*Scientific calculator Module*/
 .container {
   display: flex;
   flex-direction: column;
@@ -233,7 +231,6 @@
   background-color: #657268;
 }
 
-/*Standard calculator Module*/
 .standard-calc-container {
   width: 360px;
 }
@@ -256,15 +253,40 @@
   background-color: #1f3629;
 }
 .buttons button.toggle-button {
-    background-color: #2b4d3f;
-    font-weight: bold;
+  background-color: #2b4d3f;
+  font-weight: bold;
 }
 
 .buttons button.toggle-button.rad-mode {
-    background-color: #5c3b2b;
+  background-color: #5c3b2b;
 }
 
-/* ALL  Modules */
+.bmi-gender-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.bmi-gender-container .gender-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  font-size: 1rem;
+  font-family: sans-serif;
+  color: rgb(229, 226, 226);
+}
+
+.bmi-gender-container input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #054210;
+  background-color: transparent;
+}
 
 .content-section.active[data-content="temperature-calculator"],
 .content-section.active[data-content="speed-calculator"],
@@ -286,7 +308,6 @@
   min-height: 70dvh;
 }
 
-/*  Module Container */
 .temp-container,
 .speed-container,
 .bill-container,
@@ -301,21 +322,21 @@
 .encoder-container {
   border: 2px solid #182420;
   background-color: #215538;
-  width: 240px;
+  width: 360px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-  gap: 20px;
-  border-radius: 3px;
+  padding: 30px 25px;
+  gap: 18px;
+  border-radius: 8px;
 }
 
 .temp-container,
 .speed-container {
-  width: 225px;
+  width: 360px;
 }
 
-/*  Screen Container */
 .temp-screen,
 .speed-screen,
 .bill-screen,
@@ -328,16 +349,16 @@
 .text-case-screen,
 .password-screen,
 .encoder-screen {
-  width: 210px;
+  width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 15px;
+  margin-top: 10px;
   background-color: #111816;
   border: none;
-  padding: 4px;
+  padding: 6px;
+  border-radius: 6px;
 }
 
-/*  Screen Inputs */
 .temp-screen input,
 .speed-screen input,
 .bill-screen input,
@@ -352,20 +373,19 @@
 .encoder-screen input {
   background-color: #111816;
   color: #f6f5f0;
-  font-size: 1rem;
+  font-size: 1.1rem;
   width: 100%;
   text-align: center;
   border: none;
   outline: none;
-  padding: 8px 0;
+  padding: 10px 0;
 }
 
 .temp-screen input,
 .speed-screen input {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
-/* Button Containers */
 .temp-btn-container,
 .speed-btn-container,
 .bill-btn-container,
@@ -377,9 +397,10 @@
 .triangle-btn-container,
 .text-case-btn-container,
 .encoder-btn-container {
-  margin-top: 14px;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
+  width: 100%;
   padding: 5px;
 }
 
@@ -395,7 +416,6 @@
   gap: 8px;
 }
 
-/* Input Containers */
 .temp-input-container,
 .speed-input-container,
 .bill-input-container,
@@ -408,20 +428,20 @@
 .text-case-input-container,
 .password-input-container,
 .encoder-input-container {
-  margin-left: 10px;
+  margin-left: 0;
   padding: 5px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
+  width: 100%;
   border-radius: 5px;
 }
 
 .temp-input-container,
 .speed-input-container {
-  margin-left: 20px;
+  margin-left: 0;
 }
 
-/*  Inner Inputs & Textareas */
 .bill-input-container input,
 .bmi-input-container input,
 .water-input-container input,
@@ -434,24 +454,25 @@
   background-color: #ffffff;
   color: #000000;
   border: none;
-  padding: 8px;
-  font-size: 0.9rem;
-  width: 190px;
+  padding: 12px 14px;
+  font-size: 1rem;
+  width: 100%;
   outline: none;
+  border-radius: 6px;
 }
 
 .text-case-input-container textarea {
   background-color: #ffffff;
   color: #000000;
   border: none;
-  padding: 8px;
-  font-size: 0.9rem;
-  width: 190px;
+  padding: 12px 14px;
+  font-size: 1rem;
+  width: 100%;
   outline: none;
   resize: none;
+  border-radius: 6px;
 }
 
-/*  Back Buttons */
 .action-btn.temp-back-btn,
 .action-btn.speed-back-btn,
 .action-btn.bill-back-btn,
@@ -464,9 +485,10 @@
 .action-btn.text-case-back-btn,
 .action-btn.password-back-btn,
 .action-btn.encoder-back-btn {
-  margin-top: 40px;
+  margin-top: 20px;
+  width: 100px;
 }
-/*  Password  module */
+
 .password-screen-input.weak {
   background-color: #ffe6e6;
   color: #d9534f;
@@ -594,9 +616,9 @@
   .password-container,
   .encoder-container {
     width: 90%;
-    max-width: 300px;
+    max-width: 340px;
     flex-direction: column;
-    padding: 15px;
+    padding: 20px;
   }
 
   .temp-input-container,
@@ -648,8 +670,6 @@
     margin-top: 15px;
     margin-bottom: 10px;
     display: block;
-    width: 100px;
+    width: 100%;
   }
 }
-
-
