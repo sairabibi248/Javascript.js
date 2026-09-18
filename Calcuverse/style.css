@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 .dashboard-container {
@@ -58,36 +59,41 @@
   background-color: rgba(255, 255, 255, 0.08);
   color: aliceblue;
 }
+
 .nav-btn.active {
   background-color: #3b7a57;
   color: #ffffff;
 }
+
 .main {
   grid-area: main;
   background-color: #f6f5f0;
   padding: 30px;
 }
+
 .home-content {
   padding-top: 100px;
   text-align: center;
 }
+
 .tag-container img {
   border-radius: 10px;
   width: 100px;
 }
+
 .home-content h1 {
   padding-top: 15px;
   color: #1f2420;
   font-weight: 600;
-  font-family: sans-serif;
 }
+
 .home-content p {
   font-size: 17px;
   padding-top: 10px;
   color: #5b6259;
   font-weight: 400;
-  font-family: sans-serif;
 }
+
 .content-section {
   display: none;
 }
@@ -125,7 +131,6 @@
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 10px;
-  font-family: sans-serif;
 }
 
 .calc-card p {
@@ -133,7 +138,7 @@
   color: #4b5563;
   margin-bottom: 20px;
   padding-left: 16px;
-  font-family: sans-serif;
+
 }
 
 .calc-card:hover {
@@ -148,7 +153,7 @@
   padding: 10px 20px;
   font-size: 14px;
   font-weight: 500;
-  font-family: sans-serif;
+  
 }
 .action-btn:hover {
   background-color: #306346;
@@ -277,7 +282,6 @@
   align-items: center;
   gap: 6px;
   font-size: 1rem;
-  font-family: sans-serif;
   color: rgb(229, 226, 226);
 }
 
